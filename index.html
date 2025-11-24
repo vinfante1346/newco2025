@@ -430,8 +430,8 @@
 
                     <h4>Key Findings</h4>
                     <ul>
-                        <li><strong>Scale Advantage:</strong> AccessMás has 36,000 accounts vs MyBambu's 650,000+ accounts</li>
-                        <li><strong>Complexity Ratio:</strong> Migrating 36K accounts is 95% less complex than migrating 650K+ accounts</li>
+                        <li><strong>Scale Advantage:</strong> AccessMás has 38,000 accounts (10K active/month) vs MyBambu's 650,000+ accounts (120K active/month)</li>
+                        <li><strong>Complexity Ratio:</strong> Migrating 38K accounts is 94% less complex than migrating 650K+ accounts</li>
                         <li><strong>Platform Maturity:</strong> Galileo powers 168M+ accounts globally; Alviere serves smaller scale</li>
                         <li><strong>Technology Gap:</strong> MyBambu's modern microservices architecture (92/100) vs AccessMás low-code platform (58/100)</li>
                         <li><strong>Cost Efficiency:</strong> Single BaaS platform (Galileo) reduces operational costs by 40-50%</li>
@@ -448,14 +448,14 @@
                         </tr>
                         <tr>
                             <td class="feature-col">✅ <strong>AccessMás → MyBambu</strong></td>
-                            <td>36,000</td>
+                            <td>38,000 (10K active/mo)</td>
                             <td><strong>2 months max</strong> (AI-accelerated)</td>
                             <td style="color: #27ae60;">Low</td>
                             <td>$380K - $580K</td>
                         </tr>
                         <tr>
                             <td class="feature-col">❌ <strong>MyBambu → AccessMás</strong></td>
-                            <td>650,000+</td>
+                            <td>650,000+ (120K active/mo)</td>
                             <td>6-9 months (AI-accelerated)</td>
                             <td style="color: #e74c3c;">Very High</td>
                             <td>$4M - $7M</td>
@@ -491,9 +491,9 @@
                     </tr>
                     <tr>
                         <td class="feature-col">Account Base</td>
-                        <td>36,000 accounts</td>
-                        <td>650,000+ accounts</td>
-                        <td style="color: #27ae60;">MyBambu (18x larger)</td>
+                        <td>38,000 accounts (10K active/mo)</td>
+                        <td>650,000+ accounts (120K active/mo)</td>
+                        <td style="color: #27ae60;">MyBambu (17x larger total, 12x active)</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Platform Scale</td>
@@ -564,7 +564,7 @@
                     <li><strong>Single BaaS platform</strong> eliminates dual-provider costs (Alviere + Galileo)</li>
                     <li><strong>Consolidated operations team</strong> managing one technology stack</li>
                     <li><strong>Reduced licensing costs</strong> by eliminating OutSystems subscriptions</li>
-                    <li><strong>Economies of scale</strong> with combined 686K+ accounts on Galileo</li>
+                    <li><strong>Economies of scale</strong> with combined 688K+ accounts on Galileo</li>
                 </ul>
 
                 <h4>5. AI Acceleration Benefits</h4>
@@ -583,10 +583,11 @@
                     <ul>
                         <li>3-4x longer timeline (6-9 months vs 2 months with AI acceleration)</li>
                         <li>10-12x more expensive ($4M-$7M vs $380K-$580K)</li>
-                        <li>18x more accounts to migrate (650K vs 36K)</li>
+                        <li>17x more total accounts to migrate (650K vs 38K)</li>
+                        <li>12x more active users to support monthly (120K vs 10K)</li>
                         <li>Downgrade from Galileo (168M accounts) to Alviere (smaller scale)</li>
                         <li>Technology regression from microservices to low-code monolith</li>
-                        <li>Massive customer churn risk with 650K+ user base</li>
+                        <li>Massive customer churn risk with 650K+ user base (120K active)</li>
                     </ul>
                 </div>
             </section>
@@ -800,15 +801,21 @@
                     </tr>
                     <tr>
                         <td class="feature-col">Total Accounts</td>
-                        <td>36,000</td>
+                        <td>38,000</td>
                         <td>650,000+</td>
-                        <td>18x more accounts</td>
+                        <td>17x more accounts</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-col">Active Accounts (Monthly)</td>
+                        <td>10,000</td>
+                        <td>120,000</td>
+                        <td>12x more active users</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Estimated User Records</td>
-                        <td>~180,000 (5 tables)</td>
+                        <td>~190,000 (5 tables)</td>
                         <td>~3,250,000+ (5 tables)</td>
-                        <td>18x more records</td>
+                        <td>17x more records</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Transaction History</td>
@@ -844,10 +851,10 @@
 
                 <h3>Risk Analysis by Scale</h3>
 
-                <h4>AccessMás Migration Risks (36K Accounts) - LOW TO MEDIUM</h4>
+                <h4>AccessMás Migration Risks (38K Accounts) - LOW TO MEDIUM</h4>
                 <ul>
-                    <li><strong>Customer impact:</strong> 36K users affected, easier to communicate and support</li>
-                    <li><strong>Data volume:</strong> ~180K records manageable in single migration batch</li>
+                    <li><strong>Customer impact:</strong> 38K users affected (10K active/month), easier to communicate and support</li>
+                    <li><strong>Data volume:</strong> ~190K records manageable in single migration batch</li>
                     <li><strong>Cutover window:</strong> Can complete in 1-2 weekend maintenance windows</li>
                     <li><strong>Support surge:</strong> ~360 tickets/week manageable with existing team</li>
                     <li><strong>Rollback feasibility:</strong> Can revert to Alviere if critical issues arise</li>
@@ -925,7 +932,7 @@ not linearly, with account scale.
 
                 <div class="highlight-box">
                     <h4>Migration Goal</h4>
-                    <p>Migrate 36,000 AccessMás accounts from Alviere banking infrastructure to Galileo, ensuring zero data loss, minimal downtime, and seamless customer experience.</p>
+                    <p>Migrate 38,000 AccessMás accounts (10,000 active monthly) from Alviere banking infrastructure to Galileo, ensuring zero data loss, minimal downtime, and seamless customer experience.</p>
                 </div>
 
                 <div id="migration-phases">
@@ -1828,12 +1835,12 @@ export class BaasRouterService {
                     <h3>Success Criteria</h3>
                     <p>The migration will be considered successful when:</p>
                     <ul>
-                        <li>✅ 100% of 36K accounts migrated to Galileo</li>
+                        <li>✅ 100% of 38K accounts migrated to Galileo</li>
                         <li>✅ Zero balance discrepancies (penny-for-penny accuracy)</li>
                         <li>✅ Customer churn rate < 2% during migration period</li>
                         <li>✅ Galileo APIs performing at 99.9%+ uptime</li>
                         <li>✅ Alviere contract terminated, cost savings realized</li>
-                        <li>✅ Combined platform serving 686K+ accounts on single BaaS (Galileo)</li>
+                        <li>✅ Combined platform serving 688K+ accounts (132K active monthly) on single BaaS (Galileo)</li>
                     </ul>
                 </div>
             </section>
