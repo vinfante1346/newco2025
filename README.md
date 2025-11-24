@@ -33,7 +33,7 @@ This document is password-protected. Visit the GitHub Pages site to view:
 
 - **Timeline:** 2 months maximum (AI-accelerated)
 - **Cost:** $380K - $580K
-- **Accounts:** 36,000 AccessMás accounts → MyBambu (Galileo)
+- **Accounts:** 38,000 AccessMás accounts (10K active/month) → MyBambu (650K accounts, 120K active/month)
 - **No card re-issuance required** - Separate BINs under Galileo
 
 ## 🔐 Security Note

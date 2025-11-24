@@ -537,7 +537,7 @@
 
                 <h4>1. Scale Economics</h4>
                 <ul>
-                    <li><strong>36,000 accounts</strong> is manageable migration scope</li>
+                    <li><strong>38,000 accounts</strong> is manageable migration scope</li>
                     <li><strong>Smaller user base</strong> = less customer disruption risk</li>
                     <li><strong>Faster cutover</strong> with fewer edge cases to handle</li>
                     <li><strong>Easier rollback</strong> if issues arise during migration</li>
@@ -788,14 +788,14 @@
 
             <!-- Scale Analysis -->
             <section id="scale-analysis" class="content-section">
-                <h2>Scale Analysis: 36K vs 100K+ Accounts</h2>
+                <h2>Scale Analysis: 38K vs 650K+ Accounts</h2>
 
                 <h3>Migration Complexity by Numbers</h3>
 
                 <table class="comparison-table">
                     <tr>
                         <th>Metric</th>
-                        <th>AccessMás (36K)</th>
+                        <th>AccessMás (38K)</th>
                         <th>MyBambu (650K+)</th>
                         <th>Complexity Factor</th>
                     </tr>
@@ -913,11 +913,11 @@ Med   │                    ╔═════════╝     ╚═══�
       │                    ║
       │          ╔═════════╝
       │    ╔═════╣ AccessMás → MyBambu
-      │    ║     ║ 36K accounts
+      │    ║     ║ 38K accounts
 Low   │    ║     ║ $800K-$1.2M
       │    ║     ║ 6-9 months
       └────╚═════╩────────────────────────────────────────────
-           10K   36K    50K   75K   100K+   Account Scale
+           10K   38K    50K   100K  650K+   Account Scale
 
 Key Insight: Migration complexity increases exponentially,
 not linearly, with account scale.
@@ -1057,7 +1057,7 @@ not linearly, with account scale.
 ┌────────────────────┐    ┌─────────────────────────┐
 │   Alviere API      │    │    Galileo API          │
 │   (Legacy)         │    │    (Target)             │
-│   • 36K accounts   │    │    • New accounts       │
+│   • 38K accounts   │    │    • New accounts       │
 │   • Read-only mode │    │    • Full functionality │
 └────────────────────┘    └─────────────────────────┘
     </pre>
@@ -1462,7 +1462,7 @@ export class BaasRouterService {
 
                 <h3>4. Transaction History Migration</h3>
                 <ul>
-                    <li><strong>Volume consideration:</strong> 36K accounts × ~50 transactions/user = ~1.8M transactions</li>
+                    <li><strong>Volume consideration:</strong> 38K accounts × ~50 transactions/user = ~1.9M transactions</li>
                     <li><strong>12-month limit:</strong> Only migrate recent history to reduce data volume</li>
                     <li><strong>Read-only archive:</strong> Older transactions remain in Alviere for 7-year compliance retention</li>
                     <li><strong>Historical reporting:</strong> Build API proxy to query old data from Alviere if needed</li>
@@ -1499,7 +1499,7 @@ export class BaasRouterService {
 
                 <h3>7. Performance & Scalability</h3>
                 <ul>
-                    <li><strong>Galileo proven at scale:</strong> 168M accounts globally, can easily handle 36K new accounts</li>
+                    <li><strong>Galileo proven at scale:</strong> 168M accounts globally, can easily handle 38K new accounts</li>
                     <li><strong>Load testing:</strong> Simulate 10x current AccessMás transaction volume to ensure headroom</li>
                     <li><strong>Monitoring:</strong> Deploy Datadog/New Relic for real-time BaaS API monitoring</li>
                     <li><strong>Fallback capacity:</strong> Keep Alviere active for 60 days in case of critical Galileo issues</li>
@@ -1588,7 +1588,7 @@ export class BaasRouterService {
                 <h3>Overall Risk Profile</h3>
                 <div class="highlight-box">
                     <p><strong>Assessment:</strong> The AccessMás → MyBambu migration carries <strong>MEDIUM overall risk</strong>, primarily due to customer experience concerns (card re-issuance) and temporary support load. Technical risks are LOW due to proven platforms and phased approach.</p>
-                    <p><strong>Risk Reduction:</strong> By migrating the smaller system (36K accounts) into the larger, more mature platform, we significantly reduce technical and operational risks compared to the reverse direction.</p>
+                    <p><strong>Risk Reduction:</strong> By migrating the smaller system (38K accounts) into the larger, more mature platform, we significantly reduce technical and operational risks compared to the reverse direction.</p>
                 </div>
             </section>
 
@@ -1627,7 +1627,7 @@ export class BaasRouterService {
                     <tr>
                         <td class="feature-col">Phase 4: Production Rollout</td>
                         <td>2-3 weeks</td>
-                        <td>All 36K accounts migrated with AI automation</td>
+                        <td>All 38K accounts migrated with AI automation</td>
                         <td>AI-optimized batching, no card re-issuance delay</td>
                     </tr>
                     <tr>
@@ -1744,7 +1744,7 @@ export class BaasRouterService {
                     <h3>1. Proceed with AccessMás → MyBambu Migration</h3>
                     <p><strong>Rationale:</strong> All quantitative and qualitative factors support migrating the smaller AccessMás system into MyBambu's proven infrastructure.</p>
                     <ul>
-                        <li>3x fewer accounts to migrate (36K vs 100K+)</li>
+                        <li>17x fewer accounts to migrate (38K vs 650K+)</li>
                         <li>Superior target platform (Galileo > Alviere)</li>
                         <li>Technology modernization (escape OutSystems)</li>
                         <li>60% cost savings vs reverse direction</li>
@@ -1816,7 +1816,7 @@ export class BaasRouterService {
                     <li><strong>Week 2-3:</strong> Phase 1 - AI-assisted discovery and data mapping</li>
                     <li><strong>Week 3-4:</strong> Phase 2 - AI-accelerated Galileo API integration</li>
                     <li><strong>Week 5-6:</strong> Phase 3 - Pilot migration with AI validation (500 accounts)</li>
-                    <li><strong>Week 6-8:</strong> Phase 4 - Production rollout with AI automation (36K accounts)</li>
+                    <li><strong>Week 6-8:</strong> Phase 4 - Production rollout with AI automation (38K accounts)</li>
                     <li><strong>Week 8-9:</strong> Phase 5 - Alviere sunset and AI-driven optimization</li>
                 </ol>
 
