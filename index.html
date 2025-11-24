@@ -434,6 +434,7 @@
                         <li><strong>Complexity Ratio:</strong> Migrating 38K accounts is 94% less complex than migrating 650K+ accounts</li>
                         <li><strong>Platform Maturity:</strong> Galileo powers 168M+ accounts globally; Alviere serves smaller scale</li>
                         <li><strong>Technology Gap:</strong> MyBambu's modern microservices architecture (92/100) vs AccessMás low-code platform (58/100)</li>
+                        <li><strong>Active User Base:</strong> 10K active monthly users (AccessMás) vs 120K active monthly users (MyBambu) = 12x more activity</li>
                         <li><strong>Cost Efficiency:</strong> Single BaaS platform (Galileo) reduces operational costs by 40-50%</li>
                     </ul>
 
@@ -537,15 +538,16 @@
 
                 <h4>1. Scale Economics</h4>
                 <ul>
-                    <li><strong>38,000 accounts</strong> is manageable migration scope</li>
-                    <li><strong>Smaller user base</strong> = less customer disruption risk</li>
+                    <li><strong>38,000 total accounts (10K active/month)</strong> is manageable migration scope</li>
+                    <li><strong>Smaller user base</strong> = less customer disruption risk (10K vs 120K active users)</li>
+                    <li><strong>Lower transaction volume</strong> = ~6M vs ~72M transactions to migrate</li>
                     <li><strong>Faster cutover</strong> with fewer edge cases to handle</li>
                     <li><strong>Easier rollback</strong> if issues arise during migration</li>
                 </ul>
 
                 <h4>2. Platform Maturity</h4>
                 <ul>
-                    <li><strong>MyBambu's infrastructure is battle-tested</strong> at 100K+ account scale</li>
+                    <li><strong>MyBambu's infrastructure is battle-tested</strong> at 650K+ account scale with 120K active monthly users</li>
                     <li><strong>Galileo powers 168M+ accounts</strong> globally (Chime, Robinhood, SoFi)</li>
                     <li><strong>Proven scalability</strong> for future growth to millions of users</li>
                     <li><strong>Superior observability</strong> and monitoring tools already in place</li>
@@ -819,21 +821,21 @@
                     </tr>
                     <tr>
                         <td class="feature-col">Transaction History</td>
-                        <td>~1-2M transactions</td>
-                        <td>~65-100M transactions</td>
-                        <td>50x more transactions</td>
+                        <td>~6M transactions (12 months)</td>
+                        <td>~72M transactions (12 months)</td>
+                        <td>12x more transactions</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Active Users (Daily)</td>
-                        <td>~3,600 (10% DAU)</td>
-                        <td>~97,500 (15% DAU)</td>
-                        <td>27x more active users</td>
+                        <td>~1,000 (10% of MAU)</td>
+                        <td>~12,000 (10% of MAU)</td>
+                        <td>12x more active daily users</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Customer Support Load</td>
-                        <td>~360 tickets/week</td>
-                        <td>~9,750 tickets/week</td>
-                        <td>27x more support volume</td>
+                        <td>~100 tickets/week</td>
+                        <td>~1,200 tickets/week</td>
+                        <td>12x more support volume</td>
                     </tr>
                     <tr>
                         <td class="feature-col">Migration Cutover Window</td>
@@ -851,22 +853,23 @@
 
                 <h3>Risk Analysis by Scale</h3>
 
-                <h4>AccessMás Migration Risks (38K Accounts) - LOW TO MEDIUM</h4>
+                <h4>AccessMás Migration Risks (38K Accounts, 10K Active/Month) - LOW TO MEDIUM</h4>
                 <ul>
-                    <li><strong>Customer impact:</strong> 38K users affected (10K active/month), easier to communicate and support</li>
-                    <li><strong>Data volume:</strong> ~190K records manageable in single migration batch</li>
+                    <li><strong>Customer impact:</strong> 38K total users (10K active/month), easier to communicate and support</li>
+                    <li><strong>Data volume:</strong> ~190K records + ~6M transactions manageable in batched migration</li>
                     <li><strong>Cutover window:</strong> Can complete in 1-2 weekend maintenance windows</li>
-                    <li><strong>Support surge:</strong> ~360 tickets/week manageable with existing team</li>
+                    <li><strong>Support surge:</strong> ~100 tickets/week easily manageable with existing team</li>
                     <li><strong>Rollback feasibility:</strong> Can revert to Alviere if critical issues arise</li>
                     <li><strong>Regulatory notifications:</strong> Smaller user base = simpler compliance reporting</li>
                 </ul>
 
-                <h4>MyBambu Migration Risks (650K+ Accounts) - VERY HIGH</h4>
+                <h4>MyBambu Migration Risks (650K+ Accounts, 120K Active/Month) - VERY HIGH</h4>
                 <ul>
-                    <li><strong>Customer impact:</strong> 650K+ users affected, enormous communication challenge</li>
-                    <li><strong>Data volume:</strong> ~3.25M+ records require extensive multi-batch phased approach</li>
+                    <li><strong>Customer impact:</strong> 650K+ total users (120K active/month), enormous communication challenge</li>
+                    <li><strong>Data volume:</strong> ~3.25M+ records + ~72M transactions require extensive multi-batch phased approach</li>
                     <li><strong>Cutover window:</strong> Requires 12-20+ weekends with highly complex orchestration</li>
-                    <li><strong>Support surge:</strong> ~9,750 tickets/week would completely overwhelm support team</li>
+                    <li><strong>Support surge:</strong> ~1,200 tickets/week baseline + migration surge would completely overwhelm support team</li>
+                    <li><strong>Active user impact:</strong> 120K monthly active users = 12x more disruption risk than AccessMás</li>
                     <li><strong>Rollback complexity:</strong> Impossible to revert after cutover at this massive scale</li>
                     <li><strong>Regulatory burden:</strong> 650K+ user base = extensive compliance reporting and regulatory oversight</li>
                     <li><strong>Revenue risk:</strong> Massive account base = extreme financial exposure during migration</li>
@@ -999,12 +1002,12 @@ not linearly, with account scale.
 
                         <div class="timeline-item">
                             <h4>Phase 4: Phased Production Migration (4-6 weeks) - AI-Accelerated</h4>
-                            <p><strong>Cohort-Based Rollout:</strong></p>
+                            <p><strong>Cohort-Based Rollout (Total: 38K accounts, 10K active monthly):</strong></p>
                             <ul>
-                                <li><strong>Cohort 1 (Week 1):</strong> 1,000 inactive accounts (AI-prioritized)</li>
-                                <li><strong>Cohort 2 (Week 2):</strong> 5,000 low-activity accounts</li>
-                                <li><strong>Cohort 3 (Week 3-4):</strong> 10,000 medium-activity accounts</li>
-                                <li><strong>Cohort 4 (Week 5-6):</strong> 20,000 active accounts (AI-optimized batching)</li>
+                                <li><strong>Cohort 1 (Week 1):</strong> 2,000 inactive accounts (no activity in 6+ months)</li>
+                                <li><strong>Cohort 2 (Week 2):</strong> 10,000 inactive accounts (no activity in 3+ months)</li>
+                                <li><strong>Cohort 3 (Week 3):</strong> 16,000 low-activity accounts (occasional users)</li>
+                                <li><strong>Cohort 4 (Week 4-5):</strong> 10,000 active monthly users (highest priority, AI-optimized batching)</li>
                             </ul>
                             <p><strong>AI-Automated Migration Process per Cohort:</strong></p>
                             <ol>
@@ -1462,8 +1465,8 @@ export class BaasRouterService {
 
                 <h3>4. Transaction History Migration</h3>
                 <ul>
-                    <li><strong>Volume consideration:</strong> 38K accounts × ~50 transactions/user = ~1.9M transactions</li>
-                    <li><strong>12-month limit:</strong> Only migrate recent history to reduce data volume</li>
+                    <li><strong>Volume consideration:</strong> 10K active users × 50 transactions/user/month × 12 months = ~6M transactions</li>
+                    <li><strong>12-month limit:</strong> Only migrate recent history (last year) to reduce data volume</li>
                     <li><strong>Read-only archive:</strong> Older transactions remain in Alviere for 7-year compliance retention</li>
                     <li><strong>Historical reporting:</strong> Build API proxy to query old data from Alviere if needed</li>
                 </ul>
@@ -1756,9 +1759,10 @@ export class BaasRouterService {
                     <h3>2. Implement Phased Cohort-Based Rollout</h3>
                     <p>Do NOT attempt a "big bang" migration. Instead:</p>
                     <ul>
-                        <li>Start with 100-500 pilot accounts (internal staff, beta users)</li>
-                        <li>Migrate in 4 production cohorts of increasing size</li>
-                        <li>Monitor each cohort for 48 hours before proceeding</li>
+                        <li>Start with 100-500 pilot accounts (prioritize active users for testing)</li>
+                        <li>Migrate in 4-5 production cohorts: inactive first, then active users</li>
+                        <li>Monitor each cohort for 24-48 hours before proceeding</li>
+                        <li>Focus on 10K active monthly users for communication and support</li>
                         <li>Maintain rollback capability via Alviere read-only mode</li>
                     </ul>
                 </div>
